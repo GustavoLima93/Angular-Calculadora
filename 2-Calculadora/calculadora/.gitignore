@@ -42,3 +42,6 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+/1-ola-mundo
+/2-Calculadora/calculadora
