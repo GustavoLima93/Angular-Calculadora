@@ -1,4 +1,7 @@
 import { TestBed, async } from '@angular/core/testing';
+
+import { CalculadoraModule } from './calculadora';
+
 import { AppComponent } from './app.component';
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -6,6 +9,9 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent
       ],
+      imports: [
+        CalculadoraModule
+      ]
     }).compileComponents();
   }));
   it('should create the app', async(() => {
