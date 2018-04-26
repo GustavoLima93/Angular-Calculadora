@@ -29,7 +29,7 @@ calcular(num1: number, num2: number , operacao: string):number{
     resultado = num1/num2;
     break;
     default:
-    resultado =0;
+    resultado = 0;
   }
   
   return resultado

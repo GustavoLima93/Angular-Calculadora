@@ -4,32 +4,33 @@
         <div class="row">
             <div class="col s12 l4 offset-l4 xl4 offset-xl4">
                 <div class="card-panel  blue-grey lighten-3 right-align screen">
-                    <span class="black-text result">0</span>
+                    <input type="text" class="black-text result" id="display" [value]="display">
                 </div>
                 <div class="buttons">
                     <div class="col s3"><button type="button" class="waves-effect waves-light btn"></button></div>
                     <div class="col s3"><button type="button" class="waves-effect waves-light btn"></button></div>
                     <div class="col s3"><button type="button" class="waves-effect waves-light btn"></button></div>
-                    <div class="col s3"><button type="button" class="waves-effect waves-light orange accent-3 btn">&divide;</button></div>
+                    <div class="col s3"><button type="button" class="waves-effect waves-light orange accent-3 btn" id="btnDividir" (click)="definindoOperacao('/')" >&divide;</button></div>
     
-                    <div class="col s3"><button type="button" class="waves-effect waves-light btn">7</button></div>
-                    <div class="col s3"><button type="button" class="waves-effect waves-light btn">8</button></div>
-                    <div class="col s3"><button type="button" class="waves-effect waves-light btn">9</button></div>
-                    <div class="col s3"><button type="button" class="waves-effect waves-light orange accent-3 btn">*</button></div>
+                    <div class="col s3"><button type="button" class="waves-effect waves-light btn" id="btn7" (click)="adicionarNumero('7')" >7</button></div>
+                    <div class="col s3"><button type="button" class="waves-effect waves-light btn" id="btn8" (click)="adicionarNumero('8')" >8</button></div>
+                    <div class="col s3"><button type="button" class="waves-effect waves-light btn" id="btn9" (click)="adicionarNumero('9')" >9</button></div>
+                    <div class="col s3"><button type="button" class="waves-effect waves-light orange accent-3 btn" id="btnMultiplicar" (click)="definindoOperacao('*')" >*</button></div>
     
-                    <div class="col s3"><button type="button" class="waves-effect waves-light btn">4</button></div>
-                    <div class="col s3"><button type="button" class="waves-effect waves-light btn">5</button></div>
-                    <div class="col s3"><button type="button" class="waves-effect waves-light btn">6</button></div>
-                    <div class="col s3"><button type="button" class="waves-effect waves-light orange accent-3 btn">-</button></div>
+                    <div class="col s3"><button type="button" class="waves-effect waves-light btn" id="btn4" (click)="adicionarNumero('4')" >4</button></div>
+                    <div class="col s3"><button type="button" class="waves-effect waves-light btn" id="btn5" (click)="adicionarNumero('5')" >5</button></div>
+                    <div class="col s3"><button type="button" class="waves-effect waves-light btn" id="btn6" (click)="adicionarNumero('6')" >6</button></div>
+                    <div class="col s3"><button type="button" class="waves-effect waves-light orange accent-3 btn" id="btnSubtracao" (click)="definindoOperacao('-')" >-</button></div>
     
-                    <div class="col s3"><button type="button" class="waves-effect waves-light btn">1</button></div>
-                    <div class="col s3"><button type="button" class="waves-effect waves-light btn">2</button></div>
-                    <div class="col s3"><button type="button" class="waves-effect waves-light btn">3</button></div>
-                    <div class="col s3"><button type="button" class="waves-effect waves-light orange accent-3 btn">+</button></div>
+                    <div class="col s3"><button type="button" class="waves-effect waves-light btn" id="btn1" (click)="adicionarNumero('1')" >1</button></div>
+                    <div class="col s3"><button type="button" class="waves-effect waves-light btn" id="btn2"(click)="adicionarNumero('2')" >2</button></div>
+                    <div class="col s3"><button type="button" class="waves-effect waves-light btn" id="btn3" (click)="adicionarNumero('3')" >3</button></div>
+                    <div class="col s3"><button type="button" class="waves-effect waves-light orange accent-3 btn" id="btnSoma" (click)="definindoOperacao('+')" >+</button></div>
     
-                    <div class="col s6"><button type="button" class="waves-effect waves-light btn btn-special">0</button></div>
-                    <div class="col s3"><button type="button" class="waves-effect waves-light btn">.</button></div>
-                    <div class="col s3"><button type="button" class="waves-effect waves-light orange accent-3 btn">=</button></div>
+                    <div class="col s3"><button type="button" class="waves-effect waves-light btn" id="btnLimpar" (click)="limpar()" >C</button></div>
+                    <div class="col s3"><button type="button" class="waves-effect waves-light btn" id="btn0" (click)="adicionarNumero('0')" >0</button></div>
+                    <div class="col s3"><button type="button" class="waves-effect waves-light btn" id="btnPonto" (click)="adicionarNumero('.')" >.</button></div>
+                    <div class="col s3"><button type="button" class="waves-effect waves-light orange accent-3 btn" id="btnCalcular" (click)="calcular()" >=</button></div>
     
                 </div>
             </div>
